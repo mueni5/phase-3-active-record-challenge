@@ -1,6 +1,6 @@
 # phase-3-active-record-challenge
 
-Active Record Code Challenge: Product Review
+#    Active Record Code Challenge: Product Review
 
 We have three models: User, Review, and Product.
 
@@ -23,41 +23,43 @@ Product - User is a many to many relationship.
     A user has many products, through reviews.
 
 
-GETTING STARTED.
-
-SET-UP
+#  GETTING STARTED.
 
 Clone this repository to your local machine.
 cd into the project folder.
 
-Run bundle init. 
+  Run bundle init. 
       This generates a Gemfile where you add other gems which are not in the file and are necessary for the project.
-Run bundle install.
+
+  Run bundle install.
     this generates a gemlile.lock file where all gems are installed.
-s
-Create migration files for products, users and reviews Run this code to create a migration:
+
+  Create migration files for products, users and reviews Run this code to create a migration:
 
  bundle exec rake db:create_migration NAME=create_user-table
   add the table contents to all the tables created.
 
   #Review table contains the foreign key.
 
-Run this code to update schema;
+  Run this code to update schema;
+
       rake db:migrate
 
-Run this code to seed the db;
+  Run this code to seed the db;
+
      rake db:seed
 
-Run this code to Open console;
+  Run this code to Open console;
+
     bundle exec rake console
 
 
 
-Author
+##  Author
 
 This project was created by Christine Mbuvi.
 
-License
+## License
 
 This project is open source under the MIT license. See the LICENSE.md file for more information.
 
