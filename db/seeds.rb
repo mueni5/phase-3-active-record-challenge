@@ -4,7 +4,6 @@
   product = Product.create(
     name: Faker::Commerce.product_name,  # Update attribute name here
     description: Faker::Lorem.sentence,
-    brand: Faker::Company.name,
     price: rand(0..60) # random number between 0 and 60
   )
   
