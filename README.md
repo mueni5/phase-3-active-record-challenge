@@ -22,6 +22,8 @@ Product - User is a many to many relationship.
 
     A user has many products, through reviews.
 
+    https://drawsql.app/teams/baby-4/diagrams/tables
+
 
 #  GETTING STARTED.
 
