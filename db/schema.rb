@@ -14,26 +14,21 @@ ActiveRecord::Schema.define(version: 2023_06_05_151551) do
 
   create_table "Products", force: :cascade do |t|
     t.string "title"
-    t.string "genre"
+    t.string "description"
     t.string "user_id"
     t.integer "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reviews", force: :cascade do |t|
     t.integer "rate"
     t.string "comment"
     t.integer "user_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.integer "product_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "email"
   end
 
 end

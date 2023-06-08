@@ -1,15 +1,8 @@
-puts "🌱 Seeding data..."
-
-# Make 10 users
-10.times do
-  User.create(name: Faker::Name.name)
-end
-
 # Make 50 products
 50.times do
   # create a product with random data
   product = Product.create(
-    product_name: Faker::Commerce.product_name,
+    name: Faker::Commerce.product_name,  # Update attribute name here
     description: Faker::Lorem.sentence,
     brand: Faker::Company.name,
     price: rand(0..60) # random number between 0 and 60
@@ -29,5 +22,3 @@ end
     )
   end
 end
-
-puts "🌱 Done seeding!"

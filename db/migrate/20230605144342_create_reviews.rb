@@ -5,7 +5,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.integer :rate 
       t.string :comment
       t.integer :user_id 
-      t.timestamps
+      # t.timestamps
     end
   end
 end
